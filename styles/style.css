@@ -1,0 +1,244 @@
+*{             /*  universel selector */
+    /* color: #1A2238; */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* height: 100vh; */
+}
+
+a {
+    
+    text-decoration: none;
+    color: #1A2238;
+
+}
+
+a:hover{
+    
+    background-color: #1A2238;
+    color: white;
+    
+}
+
+
+/* scrollbar  */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    transition: 0.5s; 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* scrollbar  */
+.projects::-webkit-scrollbar {
+    height: 5px;
+}
+  
+  /* Track */
+.projects::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+.projects::-webkit-scrollbar-thumb {
+    background: #4d4d4d;
+    transition: 0.5s; 
+}
+  
+  /* Handle on hover */
+.projects::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0); 
+}
+
+
+
+
+
+
+
+
+/* disable text selection  */
+.disabletxt{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+/* dropshadow */
+.dropshadow:hover {
+    box-shadow: 0 0px 12px 0 #1A2238;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+
+}
+
+
+
+
+/* top nav  */
+.nav-links {
+    margin: 1.3rem;
+    display: flex;
+
+}
+
+/* nav logo */
+.navlogo {
+    font-family: 'Caveat', cursive;
+    font-weight: 100;
+    flex: 80;
+}
+
+/*navbar links */
+.flex {
+    flex: 10%;
+    font-weight: 600;
+    
+}
+.navlink {
+    margin: 0 0.5rem;
+    text-align: center;
+    padding: 1rem 2rem;
+
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+}
+
+
+
+/*main body  background dropshadow*/
+.main{
+    position: relative;
+    background: white;
+    color: #1A2238;
+    border-radius: 30px 30px 30px 30px;
+    margin: 2%;
+    margin-top: 4%;
+    padding: 1%;
+
+    transition: 0.5s;
+}
+
+
+.logo-container {
+    display: flex;
+    transition: 0.5s;
+}
+.logo{
+    flex: 70%;
+    margin-top: 10%;
+    
+    font-size: 3rem;
+    font-family: 'Caveat', cursive;
+}
+.pfp{
+    flex: 5%;
+    margin-bottom: 10%;
+}
+
+
+
+/* main text */
+.box-container {
+    border: 1px solid #1A2238;
+    border-radius: 30px 30px 30px 30px;
+    padding: 2%;
+    margin: 2% 5% ;
+    background: #1A2238;
+    color: #ffffff;
+}
+
+.main-page {
+
+    position: relative;
+    text-align: center;
+    /* border: 1px solid red; */
+    
+}
+.peragraph {
+    margin-top: 20%;
+    margin-bottom: 30%;
+    font-size: 150%;
+    /* border: 1px solid red; */
+}
+.peragraph p {
+    margin: 2rem 6rem;
+}
+
+
+
+
+
+
+/* more & projects */
+.more-container {
+    padding-top: 5%;
+
+
+}
+.detail {
+    margin: 3% 3%;
+}
+
+.detail-text {
+    margin: 15% 3%;
+}
+
+.projects {
+    display: flex;
+    overflow-x: auto;
+
+}
+.project {
+    margin: 2% auto;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 200px 110px;
+}
+
+
+
+
+
+
+/* footer */
+.contact-container {
+    
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 30px 30px 0px 0px;
+    border-bottom: none;
+    background-color: #ffffff;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    transition: 0.5s;
+
+
+}
+.contact-container h1 {
+    font-size: large;
+    font-weight: 200;
+}
+.contact  {
+    display: flex;
+    padding: 2rem;
+}
+.contact-link {
+    flex: 20%;
+    color: #1A2238;
+    transition: 0.5s;
+    padding: 0.5rem 1rem;
+}
+
