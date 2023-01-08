@@ -1,2 +1,3 @@
 alert("hello there")
 prompt("enter your name");
+console.log("hii");
