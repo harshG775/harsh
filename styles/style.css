@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Happy+Monkey&family=Montserrat&display=swap');
+
 *{             /*  universel selector */
-    /* color: #1A2238; */
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    /* height: 100vh; */
 }
 
 a {
@@ -22,7 +22,7 @@ a:hover{
 
 /* scrollbar  */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 6px;
 }
   
   /* Track */
@@ -33,6 +33,7 @@ a:hover{
   /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #000000;
+    border-radius: 999px;
     transition: 0.5s; 
 }
   
@@ -43,23 +44,27 @@ a:hover{
 
 /* scrollbar  */
 .projects::-webkit-scrollbar {
-    height: 5px;
+    height: 6px;
 }
-  
-  /* Track */
+
+/* Track */
 .projects::-webkit-scrollbar-track {
     background: #f1f1f1; 
+    border-radius: 5px;
 }
-   
-  /* Handle */
+
+/* Handle */
 .projects::-webkit-scrollbar-thumb {
-    background: #4d4d4d;
+    background: rgb(0, 0, 0); 
+    border-radius: 999px;
     transition: 0.5s; 
 }
-  
-  /* Handle on hover */
+
+/* Handle on hover */
 .projects::-webkit-scrollbar-thumb:hover {
-    background: rgb(0, 0, 0); 
+    height: 10px;
+    background: #4d4d4d;
+
 }
 
 
