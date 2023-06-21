@@ -20,7 +20,6 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 0 4vw;
 }
 .hero_img_outer .hero_Img  {
     position: relative;
@@ -125,10 +124,15 @@
         flex-wrap: wrap-reverse;
 
     }
+    /* hero image  */
+    .hero_img_outer{
+        padding: 0 4vw;
+    }
 
     /* into section  */
     .hero_intro{
         text-align: center;
+        padding: 0 4vw;
     }
     
 }
