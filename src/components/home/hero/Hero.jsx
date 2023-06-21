@@ -4,8 +4,7 @@ import "./hero.css"
 import Typed from "./type/Typed"
 
 
-export const Hero = ()=>{
-    return (<>
+export const Hero = ()=>(<>
     <section className="hero_outer">
         <div className="hero maxContainer">
             <div className="hero_img_outer">
@@ -21,12 +20,12 @@ export const Hero = ()=>{
             </div>
             <div className="hero_intro">
                 <div className="intro_inner">
-                    <h6>👋 Hi, I am </h6>
-                    <h1>Tapsi  <i><img src="https://tapsi-react.vercel.app/assets/img/mask.jpg" alt="title"/></i>dSouza</h1>
+                    <h6>👋 Hi&sbquo; I&apos;m</h6>
+                    <h1>Harsh <i><img src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.6435-9/131401583_101605511863038_6328768218145818062_n.jpg?_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6DHwjjbc4s8AX9x_ADp&_nc_ht=scontent.fdel8-1.fna&oh=00_AfAh1oDQwYVKZf2lK54no9j7raFYroxdLNsWG_jGyHvleg&oe=64BA4AC2" alt="title" /></i>Gaur</h1>
                     <h2 className="type">I am a <Typed /></h2>
                     <p>We work with professionals and leaders who want to build careers that fulfil them intellectually, financially</p>
                     <div>
-                        <a className="theme_btn" href="#contactus">
+                        <a className="theme_btn" href="resume.pdf">
                             Download cv <i className="fa-solid fa-download"></i>
                         </a>
                     </div>
@@ -34,4 +33,4 @@ export const Hero = ()=>{
             </div>
         </div>
     </section>
-</>)}
+</>)
