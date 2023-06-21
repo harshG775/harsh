@@ -1,6 +1,4 @@
 import "./hero.css"
-
-
 import Typed from "./type/Typed"
 
 
@@ -25,7 +23,7 @@ export const Hero = ()=>(<>
                     <h2 className="type">I am a <Typed /></h2>
                     <p>We work with professionals and leaders who want to build careers that fulfil them intellectually, financially</p>
                     <div>
-                        <a className="theme_btn" href="resume.pdf">
+                        <a className="theme_btn" href="../../../assets/Harsh-_Resume.pdf" download>
                             Download cv <i className="fa-solid fa-download"></i>
                         </a>
                     </div>

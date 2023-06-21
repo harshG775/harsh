@@ -8,12 +8,12 @@ export default function App() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Developer !", "Designer !"], // Strings to display
+      strings: ["Designer !", "","","Developer !"], // Strings to display
       // Speed settings, try diffrent values untill you get good results
-      startDelay: 1000,
-      typeSpeed: 20,
-      backSpeed: 20,
-      backDelay: 100,
+      startDelay: 10,
+      typeSpeed: 10,
+      backSpeed: 10,
+      backDelay: 1000,
       smartBackspace: true,
       loop: true,
       showCursor: true,

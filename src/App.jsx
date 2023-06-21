@@ -2,6 +2,8 @@ import "./App.css";
 
 import { Navbar } from "./components/navbar/Navbar";
 import { Hero } from "./components/home/hero/Hero";
+// import { About } from "./components/home/about/About";
+import { Services } from "./components/home/services/Services";
 
 
 function App() {
@@ -10,6 +12,9 @@ function App() {
             <Navbar />
             <main>
 				<Hero/>
+				{/* <About/> */}
+                <Services/>
+                
 			</main>
         </>
     );
