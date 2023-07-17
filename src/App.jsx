@@ -2,22 +2,18 @@ import "./App.css";
 
 import { Navbar } from "./components/navbar/Navbar";
 import { Hero } from "./components/home/hero/Hero";
-// import { About } from "./components/home/about/About";
+import { About } from "./components/home/about/About";
 import { Services } from "./components/home/services/Services";
 
 
-function App() {
+export default function App() {
     return (
         <>
             <Navbar />
-            <main>
 				<Hero/>
-				{/* <About/> */}
+				<About/>
                 <Services/>
                 
-			</main>
         </>
     );
 }
-
-export default App;

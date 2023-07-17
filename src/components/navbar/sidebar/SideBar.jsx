@@ -3,7 +3,7 @@ export const SideNavbar=()=>{
     return(<>
             <input type="checkbox" name="" id="menuTG" />
         <nav className="side_navbar">
-            <a className="logo" href=""><img src="https://tapsi-react.vercel.app/assets/img/logo.svg" alt="" /></a>
+            <a className="logo" href=""><h2>Harsh</h2></a>
             <ul>
                 <li><a href="#"><i className="fa-solid fa-house active"></i>Home</a></li>
                 <li><a href="#"><i className="fa-solid fa-user-large"></i>About</a></li>

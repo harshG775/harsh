@@ -82,10 +82,16 @@
 }
 /* .side_navbar */
 #menuTG:checked ~ .side_navbar{
+    left: -10;
+}
+#menuTG:not(:checked) ~ .side_navbar{
     left: -10rem;
 }
 @media (min-width:960px) {
     #menuTG:checked ~ .side_navbar{
+        left: 0rem;
+    }
+    #menuTG:not(:checked) ~ .side_navbar{
         left: 0rem;
     }
     
