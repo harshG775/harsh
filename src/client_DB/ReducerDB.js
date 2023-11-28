@@ -1,13 +1,13 @@
 export const Actions = {
-    TOGGLE_MENU: "toggle_menu",
+    SIDEBAR_TOGGLE:"sidebar_toggle"
 }
 
 export default function ReducerDB(state,{actionType,payload}) {
     switch (actionType) {
-        case Actions.TOGGLE_MENU:
+        case Actions.SIDEBAR_TOGGLE:
             return {
                 ...state,
-                isOpen:payload,
+                isSideBarOpen:payload,
             };
         // default:
         //     throw new Error();

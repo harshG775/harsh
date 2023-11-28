@@ -1,7 +1,3 @@
-import { useContext } from "react";
-import Context_DB from "../../client_DB/Context_DB";
-import { Actions } from "../../client_DB/ReducerDB";
-
 import { Section } from "../../components/HTMLComponents/Section";
 import {
 	H_1,
@@ -13,31 +9,24 @@ import {
 } from "../../components/HTMLComponents/Headings";
 
 export default function Home() {
-	const [state, dispatch] = useContext(Context_DB);
 
-	const handleClick = () => {
-		dispatch({
-			actionType: Actions.TOGGLE_MENU,
-			payload: !state.isOpen,
-		});
-	};
 	return (
 		<>
 			<Section>
-				<h1>Home :{`${state.isOpen}`}</h1>
-				<button onClick={handleClick}>toggle</button>
+				<h1>Home </h1>
+				<button>toggle</button>
 				<H_1>Hello world</H_1>
-				<button onClick={handleClick}>toggle</button>
+				<button>toggle</button>
 				<H_2>Hello world</H_2>
-				<button onClick={handleClick}>toggle</button>
+				<button>toggle</button>
 				<H_3>Hello world</H_3>
-				<button onClick={handleClick}>toggle</button>
+				<button>toggle</button>
 				<H_4>Hello world</H_4>
-				<button onClick={handleClick}>toggle</button>
+				<button>toggle</button>
 				<H_5>Hello world</H_5>
-				<button onClick={handleClick}>toggle</button>
+				<button>toggle</button>
 				<H_6>Hello world</H_6>
-				<button onClick={handleClick}>toggle</button>
+				<button>toggle</button>
 			</Section>
 		</>
 	);
