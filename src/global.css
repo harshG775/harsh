@@ -1,0 +1,43 @@
+@layer base {
+
+    :root[data-theme="light"] {
+        --text: 198 95% 8%;
+        --bg_1: 0 0% 100%;
+        --bg_2: 200 100% 97%;
+        --primary: 201 96% 52%;
+        --secondary: 228 7% 28%;
+        --accent: 201 95% 75%;
+    }
+
+    :root[data-theme="dark"] {
+        --text: 0 0% 100%;
+        --bg_1: 198 0% 8%;
+        --bg_2: 213 15% 12%;
+        --primary: 181 96% 52%;
+        --secondary: 228 7% 28%;
+        --accent: 181 95% 75%;
+    }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root[data-theme="light"] {
+    --text:hsl(198, 95%, 8%);
+    --bg_1:hsl(0, 0%, 100%);
+    --bg_2:hsl(200, 100%, 97%);
+    
+    --primary:hsl(201, 96%, 52%);
+    --secondary:hsl(228, 7%, 28%);
+    --accent:hsl(201, 95%, 75%);
+}
+:root[data-theme="dark"] {
+    --text:hsl(0, 0%, 100%);
+    --bg_1:hsl(198, 0%, 8%);
+    --bg_2:hsl(213, 15%, 12%);
+
+    --primary:hsl(181, 96%, 52%);
+    --secondary:hsl(228, 7%, 28%);
+    --accent:hsl(181, 95%, 75%);
+} */

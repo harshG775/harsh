@@ -1,0 +1,73 @@
+:root {
+    --text_color_lighter: rgb(40, 41, 42);
+    --text_color: rgb(31, 31, 31);
+
+    --background_color_lighter: rgb(255, 255, 255);
+    --background_color: rgb(227, 227, 227);
+
+    --base_color_lighter: rgb(25, 184, 147);
+    --base_color: rgb(0, 74, 119);
+}
+
+
+
+
+#hero-outer {
+    padding-left: 6rem;
+    /* padding: 6rem 0 6rem 0; */
+    display: grid;
+    place-content: center;
+    overflow-x: hidden;
+
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    color: var(--text_color);
+}
+.hero > div {
+    flex: 1 1 30rem;
+    max-width: 30rem;
+}
+
+
+/* left image hero_Img */
+.hero-img {
+    margin: auto;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+/* right intro hero_intro */
+.hero-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 1rem ;
+}
+.hero-intro .intro-name{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+@media (max-width:960px) {
+    #hero-outer {
+        padding-left: 0rem;
+    }
+
+    .hero > div {
+        flex: 1 1 auto;
+        max-width: unset;
+    }
+    .hero {
+        flex-wrap: wrap-reverse;
+        padding: 0 4%;
+    }
+    .hero-intro {
+        text-align: center;
+        align-items: center;
+    }
+    
+}
