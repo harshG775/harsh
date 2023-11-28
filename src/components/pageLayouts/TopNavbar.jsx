@@ -15,7 +15,7 @@ export default function TopNavbar() {
 		})
 	}
 	return (
-		<nav className=" sticky top-0 bg-bg_2 p-2 py-3">
+		<nav className="z-50 sticky top-0 bg-bg_2 p-2 py-3">
 			<ul className="flex items-center capitalize font-medium">
 				<li className={` ${state.isSideBarOpen?"text-accent":""} flex text-3xl hover:text-accent mr-3`}>
 					<button onClick={handleToggle}>

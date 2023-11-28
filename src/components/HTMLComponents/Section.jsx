@@ -1,6 +1,7 @@
-export const Section = ({ children, className_outer, className, ...props }) => {
+export const Section = ({className_outer,section_title,	 children, className, ...props }) => {
 	return (
 		<div className={`${className_outer}`}>
+			{section_title && section_title}
 			<section
 				className={`
 					${className} 
@@ -8,8 +9,7 @@ export const Section = ({ children, className_outer, className, ...props }) => {
 					container
 					2xl:max-w-7xl
 				`}
-				{...props}
-				>
+				{...props}>
 				{children}
 			</section>
 		</div>

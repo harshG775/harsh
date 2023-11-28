@@ -27,19 +27,19 @@ const sideNavbarData = {
 			linkTo: "home",
 		},
 		{
-			title: "about",
+			title: "about me",
             icon:"mdi:user-outline",
-			linkTo: "about",
+			linkTo: "about-me",
 		},
 		{
-			title: "services",
+			title: "skills",
             icon:"tabler:briefcase",
-			linkTo: "services",
+			linkTo: "skills",
 		},
 		{
-			title: "portfolio",
+			title: "projects",
             icon:"charm:layout-stack-v",
-			linkTo: "portfolio",
+			linkTo: "projects",
 		},
 		{
 			title: "contact",
@@ -48,5 +48,42 @@ const sideNavbarData = {
 		},
 	],
 };
-
-export { topNavbarData,sideNavbarData,logo };
+const projectsData = [
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+]
+export { topNavbarData,sideNavbarData,logo,projectsData };

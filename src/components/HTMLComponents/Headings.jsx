@@ -1,15 +1,15 @@
 const  className_H = `
     transition-[max-width]
-    duration-400 
+    duration-100 
     
     container
     2xl:max-w-7xl
 
     mx-auto
-    flex
     mt-6
     mb-2
     font-semibold
+    capitalize
 `;
 const H_1 = ({ children, className, ...props }) => (
 	<h1
