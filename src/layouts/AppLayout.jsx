@@ -1,5 +1,6 @@
 import { useEffect} from "react";
 import { Outlet, useLocation } from "react-router-dom";
+import TopNavbar from "../components/pageLayouts/TopNavbar";
 export default function AppLayout() {
     const location = useLocation();
 
@@ -13,8 +14,8 @@ export default function AppLayout() {
 
     return (
         <>
-
-            <main className=" bg-bg_1 text-text min-h-screen min-w-full">
+            <TopNavbar/>
+            <main className="font-poppins bg-bg_1 text-text min-h-screen min-w-full">
                 <Outlet />
             </main>
                     

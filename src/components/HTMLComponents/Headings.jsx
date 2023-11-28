@@ -9,7 +9,7 @@ const  className_H = `
     flex
     mt-6
     mb-2
-    font-bold
+    font-semibold
 `;
 const H_1 = ({ children, className, ...props }) => (
 	<h1

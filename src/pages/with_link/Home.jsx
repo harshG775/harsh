@@ -11,9 +11,9 @@ import {
 	H_5,
 	H_6,
 } from "../../components/HTMLComponents/Headings";
+
 export default function Home() {
 	const [state, dispatch] = useContext(Context_DB);
-	console.log(state);
 
 	const handleClick = () => {
 		dispatch({
@@ -24,9 +24,9 @@ export default function Home() {
 	return (
 		<>
 			<Section>
-				<h1 className="text-text" className=' text-primary'>Home :{`${state.isOpen}`}</h1>
+				<h1>Home :{`${state.isOpen}`}</h1>
 				<button onClick={handleClick}>toggle</button>
-				<H_1 className={"text-primary"}>Hello world</H_1>
+				<H_1>Hello world</H_1>
 				<button onClick={handleClick}>toggle</button>
 				<H_2>Hello world</H_2>
 				<button onClick={handleClick}>toggle</button>
