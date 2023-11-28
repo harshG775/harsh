@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { topNavbarData } from "../../siteDB/SiteData";
+import { topNavbarData,logo } from "../../siteDB/SiteData";
 import { Icon } from "@iconify/react";
 
 import { useContext } from "react";
@@ -23,9 +23,9 @@ export default function TopNavbar() {
 					</button>
 				</li>
 				<li>
-					<Link className="transition-colors duration-300 hover:text-accent p-1 flex gap-2 flex-nowrap items-center" to="/">
-						<Icon className="text-2xl" icon={topNavbarData.logoName} />
-						logo name
+					<Link className="transition-colors duration-300 hover:text-accent p-1 flex gap-2 flex-nowrap items-center capitalize font-semibold text-primary " to="/">
+						<Icon className="text-2xl" icon={logo.logo} />
+						<span>{logo.name}</span>
 					</Link>
 				</li>
 				<li className=" ml-auto">

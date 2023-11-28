@@ -1,6 +1,8 @@
-const logo="la:dragon"
+const logo={
+	logo:"la:dragon",
+	name:"harsh"
+}
 const topNavbarData = {
-	logoName: logo,
     socialMedia:[
         {
 			title: "github",
@@ -18,7 +20,6 @@ const topNavbarData = {
     menuToggleIcon:"jam:menu"
 };
 const sideNavbarData = {
-	logoName: logo,
 	navLinks: [
 		{
 			title: "home",
@@ -48,4 +49,4 @@ const sideNavbarData = {
 	],
 };
 
-export { topNavbarData,sideNavbarData };
+export { topNavbarData,sideNavbarData,logo };

@@ -9,7 +9,7 @@
         --bg_2: 200 100% 97%;
         --primary: 3 75% 78%;
         --secondary: 228 7% 28%;
-        --accent: 183 75% 52%;
+        --accent: 3 75% 52%;
     }
 
     :root[data-theme="dark"] {
