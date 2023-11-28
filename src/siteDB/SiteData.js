@@ -45,12 +45,6 @@ const sideNavbarData = {
             icon:"ph:phone-bold",
 			linkTo: "contact",
 		},
-		{
-			title: "theme",
-            icon:"fluent:dark-theme-20-filled",
-			linkTo: "theme",
-			linkClassName:"mt-auto"
-		},
 	],
 };
 

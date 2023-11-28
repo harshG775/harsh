@@ -18,7 +18,10 @@ export default function AppLayout() {
             <TopNavbar/>
             <SideNavbar/>
 
-            <main className="font-poppins bg-bg_1 text-text min-h-screen min-w-full">
+            <main className={`
+                font-poppins bg-bg_1 text-text min-h-screen 
+                transition-padding duration-200 ease-in-out sm:pl-12
+                `}>
                 <Outlet />
             </main>
                     

@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { sideNavbarData } from "../../siteDB/SiteData";
-import { useContext } from "react";
+import { useContext} from "react";
 import Context_DB from "../../client_DB/Context_DB";
+import ThemeToggle from "../ThemeToggle";
+  
 export default function SideNavbar() {
     const [state]=useContext(Context_DB);
+
     return (
         <nav className={`
             ${state.isSideBarOpen?"w-36":"w-0 sm:w-12"} hover:w-36
-            transition-width duration-200 delay-300 ease-in-out overflow-hidden
+            transition-width duration-200 ease-in-out overflow-hidden
             fixed top-[56px] left-0 bottom-0 right-auto bg-bg_2 py-3
             `}>
             <ul className="p-2 capitalize container font-medium flex flex-col gap-2 h-full">
@@ -20,6 +23,9 @@ export default function SideNavbar() {
                         </Link>
                     </li>
                 ))}
+                    <li className={`mt-auto`}>
+                        <ThemeToggle/>
+                    </li>
             </ul>
         </nav>
 	);
