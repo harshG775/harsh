@@ -21,6 +21,7 @@ export default function AppLayout() {
             <main className={`
                 font-poppins bg-bg_1 text-text min-h-screen 
                 transition-padding duration-200 ease-in-out sm:pl-12
+                capitalize
                 `}>
                 <Outlet />
             </main>
