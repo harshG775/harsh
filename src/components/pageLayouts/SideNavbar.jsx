@@ -35,7 +35,11 @@ export default function SideNavbar() {
                         </li>
                 </ul>
             </nav>
-            <div onClick={handleToggle} className={` ${state.isSideBarOpen?"fixed inset-0":""} bg-bg_1/50 z-30`}></div>
+            <div 
+                onClick={handleToggle} 
+                className={` 
+                ${state.isSideBarOpen?"inset-0":""} fixed bg-bg_2/50 z-30 backdrop-blur-sm
+            `}></div>
         </>
 	);
 }
