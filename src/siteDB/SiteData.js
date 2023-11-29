@@ -6,7 +6,7 @@ const topNavbarData = {
     socialMedia:[
         {
 			title: "github",
-            icon:"mdi:github",
+            icon:"line-md:github-loop",
             iconColor:"hover:text-purple-600",
 			linkTo: "https://github.com/harshG775",
 		},
@@ -45,6 +45,52 @@ const sideNavbarData = {
 			title: "contact",
             icon:"ph:phone-bold",
 			linkTo: "contact",
+		},
+	],
+};
+const footerData = {
+	copyright: "© 2023 Harsh | Web Developer",
+    socialLinks: [
+        {
+          icon: "line-md:github-loop",
+          linkTo: "https://github.com/harshG775",
+          color: "hover:border-purple-600 hover:text-purple-600",
+        },
+        {
+          icon: "line-md:instagram",
+          linkTo: "https://www.instagram.com/harsh_l_l/",
+          color: "hover:border-pink-600 hover:text-pink-600",
+        },
+        {
+          icon: "line-md:linkedin",
+          linkTo: "https://www.linkedin.com/in/harshg775",
+          color: "hover:border-blue-600 hover:text-blue-600",
+        },
+      ],
+	contact: {
+		email: "your.email@example.com",
+		phone: "+1 123-456-7890",
+	},
+	logo: {
+        logo:"la:dragon",
+        name:"harsh"
+    },
+	navigationLinks: [
+		{
+			title: "about",
+			linkTo: "",
+		},
+		{
+			title: "privacy policy",
+			linkTo: "",
+		},
+		{
+			title: "licensing",
+			linkTo: "",
+		},
+		{
+			title: "contact",
+			linkTo: "",
 		},
 	],
 };
@@ -241,4 +287,4 @@ experiences,I dive into the world of web development with enthusiasm. My journey
 	},
 };
 
-export { topNavbarData,sideNavbarData,logo,  aboutMeData,projectsData };
+export { topNavbarData,sideNavbarData,logo,  aboutMeData,projectsData,footerData };

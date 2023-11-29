@@ -2,6 +2,7 @@ import { useEffect} from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import TopNavbar from "../components/pageLayouts/TopNavbar";
 import SideNavbar from "../components/pageLayouts/SideNavbar";
+import Footer from "../components/pageLayouts/Footer";
 export default function AppLayout() {
     const location = useLocation();
 
@@ -25,6 +26,7 @@ export default function AppLayout() {
                 `}>
                 <Outlet />
             </main>
+            <Footer/>
                     
         </>
     );
