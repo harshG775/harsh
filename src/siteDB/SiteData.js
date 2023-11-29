@@ -54,17 +54,17 @@ const footerData = {
         {
           icon: "line-md:github-loop",
           linkTo: "https://github.com/harshG775",
-          color: "hover:border-purple-600 hover:text-purple-600",
+          color: "hover:outline-purple-600 hover:text-purple-600",
         },
         {
           icon: "line-md:instagram",
           linkTo: "https://www.instagram.com/harsh_l_l/",
-          color: "hover:border-pink-600 hover:text-pink-600",
+          color: "hover:outline-pink-600 hover:text-pink-600",
         },
         {
           icon: "line-md:linkedin",
           linkTo: "https://www.linkedin.com/in/harshg775",
-          color: "hover:border-blue-600 hover:text-blue-600",
+          color: "hover:outline-blue-600 hover:text-blue-600",
         },
       ],
 	contact: {

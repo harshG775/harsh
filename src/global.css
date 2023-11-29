@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @layer base {
 
     :root[data-theme="light"] {
@@ -7,6 +7,7 @@
         --text: 198 95% 8%;
         --bg_1: 0 0% 100%;
         --bg_2: 200 100% 97%;
+        --bg_3: 216 56% 98%;
         --primary: 3 75% 78%;
         --secondary: 228 7% 28%;
         --accent: 3 75% 52%;
@@ -15,9 +16,10 @@
     :root[data-theme="dark"] {
         color-scheme: dark;
 
-        --text: 0 0% 100%;
+        --text: 0 0% 89%;
         --bg_1: 198 0% 8%;
         --bg_2: 213 15% 12%;
+        --bg_3: 210 2% 16%;
         --primary: 201 96% 52%;
         --secondary: 228 7% 28%;
         --accent: 201 95% 75%;
@@ -32,15 +34,17 @@
     --text:hsl(198, 95%, 8%);
     --bg_1:hsl(0, 0%, 100%);
     --bg_2:hsl(200, 100%, 97%);
+    --bg_3:hsl(216, 56%, 98%);
     
     --primary:hsl(201, 96%, 52%);
     --secondary:hsl(228, 7%, 28%);
     --accent:hsl(201, 95%, 75%);
 }
 :root[data-theme="dark"] {
-    --text:hsl(0, 0%, 100%);
+    --text:hsl(0, 0%, 89%);
     --bg_1:hsl(198, 0%, 8%);
     --bg_2:hsl(213, 15%, 12%);
+    --bg_3:hsl(210, 2%, 16%) ;
 
     --primary:hsl(181, 96%, 52%);
     --secondary:hsl(228, 7%, 28%);

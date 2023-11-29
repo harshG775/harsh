@@ -23,8 +23,8 @@ export default function TopNavbar() {
 					</button>
 				</li>
 				<li>
-					<Link className="transition-colors duration-300 hover:text-accent p-1 flex gap-2 flex-nowrap items-center capitalize font-semibold text-primary " to="/">
-						<Icon className="text-2xl" icon={logo.logo} />
+					<Link className=" transition-colors duration-300 hover:text-primary text-accent p-1 flex gap-2 flex-nowrap items-center capitalize font-semibold" to="/">
+						<Icon className="text-2xl outline outline-[2px] rounded-full" icon={logo.logo} />
 						<span>{logo.name}</span>
 					</Link>
 				</li>

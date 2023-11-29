@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 function ProjectsCard({data}) {
     return (
-		<div className="group relative min-h-[250px] max-w-md mx-auto bg-bg_2 grid place-items-center overflow-hidden rounded-md">
+		<div className="group relative min-h-[250px] mx-auto bg-bg_2 grid place-items-center overflow-hidden rounded-md">
             <img className="transition-scale duration-1000  group-hover:scale-110  w-full scale-105" src={data.preview} alt={data.title} />
             <Link className="transition-scale duration-300 group-hover:scale-110 bg-bg_2 p-2 absolute top-4 right-4 rounded-full" to={data.projectLink} target="blank">
                 <Icon icon="fluent:arrow-up-20-filled" className=" rotate-45 rounded-full text-2xl border-2 border-text"/>
