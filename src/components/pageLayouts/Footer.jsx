@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 export default function Footer() {
     return (
-        <footer className="bg-bg_2/40 transition-padding duration-200 ease-in-out sm:pl-12 mt-28 text-text/60">
+        <footer className="bg-bg_2 transition-padding duration-200 ease-in-out sm:pl-12 mt-28 text-text/60">
             <div className="relative bottom-14">
                 <Link to="/" className="w-28 h-28 transition-colors hover:text-accent outline outline-[3px] rounded-full flex flex-col items-center justify-center mx-auto mb-4 sm:mb-0 ">
                     <Icon className="text-4xl" icon={footerData.logo.logo}/>

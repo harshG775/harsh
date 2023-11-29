@@ -10,10 +10,10 @@ export default function SideNavbar() {
 
     return (
         <nav className={`
-            z-50
+             z-40
             ${state.isSideBarOpen?"w-36":"w-0 sm:w-12"} hover:w-36
             transition-width duration-200 ease-in-out overflow-hidden
-            fixed top-[56px] left-0 bottom-0 right-auto bg-bg_2 py-3
+            fixed top-0 -bottom-14 pt-20 pb-20 pt- left-0 right-auto bg-bg_2/60 backdrop-blur-md
             `}>
             <ul className="p-2 capitalize container font-medium flex flex-col gap-2 h-full">
                 {sideNavbarData.navLinks.map(navLink =>(
