@@ -49,29 +49,66 @@ const sideNavbarData = {
 	],
 };
 
+
+const projectsData = [
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
+        title:"project title",
+        projectLink:"",
+        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
+    },
+]
 const aboutMeData = {
-	aboutMe: {
-		heading_1: "my name is harsh",
-		heading_2: "i am a web developer",
-		description:
-			"This is the first paragraph of the description of the web developer that will be available to you when you start developing your application and will be available to you when you start developing your application and will be available to you when you start developing ",
-		projectsCompleted: 5,
-		ongoingProjects: 5,
-	},
-	experience: [
+    aboutMe: {
+        heading_1: "Hi, I'm H\u0061rsh!", // Unicode for 'a'
+        heading_2: "A Web Developer on a Mission",
+        description: `Passionate about transforming ideas into digital 
+experiences,I dive into the world of web development with enthusiasm. My journey is marked by a commitment to continuous learning and a knack for turning challenges into opportunities. With a focus on user-centric design and functionality, I bring creativity and precision to every project.`,
+        projectsCompleted: projectsData.length,
+        ongoingProjects: 5,
+    },
+	experiences: [
 		{
 			date: "2023 to present",
 			jobRole: "front end developer",
 			companyName: "",
-			jobDescription:
-				"This is the description of your application and will be available to you when you start developing your application and will be available",
+			jobDescription:"This is the description of your application and will be available to you when you start developing your application and will be available",
 		},
 		{
 			date: "2023 to present",
 			jobRole: "front end developer",
 			companyName: "",
-			jobDescription:
-				"This is the description of your application and will be available to you when you start developing your application and will be available",
+			jobDescription:"This is the description of your application and will be available to you when you start developing your application and will be available",
 		},
 	],
 	skills: {
@@ -203,42 +240,5 @@ const aboutMeData = {
 		],
 	},
 };
-const projectsData = [
-    {
-        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
-        title:"project title",
-        projectLink:"",
-        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
-    },
-    {
-        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
-        title:"project title",
-        projectLink:"",
-        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
-    },
-    {
-        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
-        title:"project title",
-        projectLink:"",
-        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
-    },
-    {
-        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
-        title:"project title",
-        projectLink:"",
-        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
-    },
-    {
-        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
-        title:"project title",
-        projectLink:"",
-        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
-    },
-    {
-        preview:"https://tapsi-react.vercel.app/assets/img/project-3.jpg",
-        title:"project title",
-        projectLink:"",
-        description:"Lorem ipsum Lorem ipsum Lorem ipsum"
-    },
-]
+
 export { topNavbarData,sideNavbarData,logo,  aboutMeData,projectsData };

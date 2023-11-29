@@ -4,6 +4,45 @@ import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { aboutMeData } from "../../siteDB/SiteData";
 
+function AboutMe_section({heading_1,heading_2,description,projectsCompleted,ongoingProjects,}) {
+	return (
+		<div>
+			<H_3 className={"lg:mt-0"}>about me</H_3>
+			<div className="grid gap-0">
+				<H_5 className={"sm:mb-0"}>{heading_1}</H_5>
+				<H_3 className={" uppercase "}>{heading_2}</H_3>
+				<p className="text-text/70 font-normal text-lg mb-4 whitespace-pre-line">{description}</p>
+				<div className=" grid sm:grid-cols-2 gap-2">
+					<div className="grid grid-cols-2 sm:grid-cols-1">
+						<span className="text-xl">projects completed</span>
+						<span className=" text-4xl font-bold">{projectsCompleted}</span>
+					</div>
+					<div className="grid grid-cols-2 sm:grid-cols-1">
+						<span className="text-xl">ongoing project</span>
+						<span className=" text-4xl font-bold">{ongoingProjects}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}
+
+function Experience({experiences}) {
+	return (
+		<div className="grid gap-4 ">
+			<H_4>EXPERIENCE</H_4>
+			{experiences.map((experience,i) =>(
+				<ul key={i} className="bg-bg_2/30 outline outline-2 outline-secondary/20  rounded-lg p-4 grid ">
+					<div>{experience.date}</div>
+					<div>{experience.jobRole}</div>
+					<div>{experience.jobDescription}</div>
+				</ul>
+			))}
+		</div>
+	);
+}
+
+
 function Contacts({image,contacts}) {
 	return (
 		<ul className="grid md:grid-cols-2 gap-4">
@@ -13,7 +52,7 @@ function Contacts({image,contacts}) {
 			
 			<li className="grid gap-4">
 				{contacts.map((contact,i) =>(
-					<Link target="blank" to={contact.linkTo} key={contact.contactType+i} className=" bg-bg_2/30  transition-colors hover:bg-primary hover:outline-0 outline outline-2 outline-secondary/20  rounded-lg flex items-center gap-2 p-4">
+					<Link target="blank" to={contact.linkTo} key={contact.contactType+i} className=" whitespace-nowrap bg-bg_2/30  transition-colors hover:bg-primary hover:outline-0 outline outline-2 outline-secondary/20  rounded-lg flex items-center gap-2 p-4">
 						<span className={`${contact.color} bg-bg_2 rounded-full p-2 text-2xl`}><Icon icon={contact.icon} /></span>
 						<span className="flex gap-2">
 							<span>{contact.contactType}</span>
@@ -52,38 +91,19 @@ function Skills({programmingSKills}) {
 
 export default function AboutMe() {
     return (
-        <Section id="about-me" className={" p-4 xl:p-12 grid lg:grid-cols-2 gap-8"}>
-            <ul>
-				<li className=" sticky top-14">
-					<div>
-						<H_3 className={"lg:mt-0"}>about me</H_3>
-						<div>
-							<H_5>my name is harsh</H_5>
-							<H_3 className={" uppercase"}>I AM AVAILABLE FOR UI UX DESIGN PROJECTS</H_3>
-							<p>Born in 2001,Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, error obcaecati doloremque, in animi accusantium sequi, illum cupiditate quae neque sunt. Enim sunt voluptatum nobis, labore deserunt harum nesciunt laudantium?</p>
-							<div className=" grid grid-cols-2">
-								<div>projects completed</div>
-								<div>ongoing project</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<H_4>EXPERIENCE</H_4>
-						<ul>
-							<div>date/from - date/to</div>
-							<div>experience card title</div>
-
-							<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-						</ul>
-					</div>
-				</li>
-            </ul>
-            <ul>
-                <li className=" lg:sticky top-14 ">
+        <Section id="about-me" className={" p-4 xl:p-12 grid lg:grid-cols-2 gap-4"}>
+			<ul>
+				<div className=" lg:sticky top-14 py-4">
+					<AboutMe_section {...aboutMeData.aboutMe}/>
+					<Experience experiences={aboutMeData.experiences}/>
+				</div>
+			</ul>
+			<ul>
+				<div className=" lg:sticky top-14 py-4">
 					<Contacts {...aboutMeData.contacts}/>
 					<Skills {...aboutMeData.skills}/>
-                </li>
-            </ul>
+				</div>
+			</ul>
         </Section>
 	);
 }
