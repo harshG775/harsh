@@ -8,7 +8,7 @@ function AboutMe_section({main_heading,heading_2,description,projects_completed,
 	return (
 		<div>
 			<H_4 className={"text-accent mt-8"}>about me</H_4>
-			<div className=" grid ">
+			<div>
 				<div>
 					<H_5 className={"sm:mt-0"}>{main_heading}</H_5>
 					<H_3 className={"sm:mt-0  uppercase "}>{heading_2}</H_3>
