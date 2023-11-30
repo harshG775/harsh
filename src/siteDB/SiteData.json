@@ -1,0 +1,118 @@
+{
+    "layout": {
+        "topNavBar": {
+            "socialMedia": [
+                {
+                    "title": "github",
+                    "icon": "line-md:github-loop",
+                    "iconColor": "hover:text-purple-600",
+                    "linkTo": "https://github.com/harshG775"
+                },
+                {
+                    "title": "linkedin",
+                    "icon": "mdi:linkedin",
+                    "iconColor": "hover:text-blue-600",
+                    "linkTo": "https://www.linkedin.com/in/harshg775"
+                }
+            ],
+            "menuToggleIcon": "jam:menu"
+        },
+        "footer": {
+            "copyright": "© 2023 Harsh | Web Developer",
+            "socialLinks": [
+                {
+                    "icon": "line-md:github-loop",
+                    "linkTo": "https://github.com/harshG775",
+                    "color": "hover:outline-purple-600 hover:text-purple-600"
+                },
+                {
+                    "icon": "line-md:instagram",
+                    "linkTo": "https://www.instagram.com/harsh_l_l/",
+                    "color": "hover:outline-pink-600 hover:text-pink-600"
+                },
+                {
+                    "icon": "line-md:linkedin",
+                    "linkTo": "https://www.linkedin.com/in/harshg775",
+                    "color": "hover:outline-blue-600 hover:text-blue-600"
+                }
+            ],
+            "contacts": {
+                "email": "your.email@example.com",
+                "phone": "+1 123-456-7890"
+            },
+            "logo": {
+                "logo": "la:dragon",
+                "name": "harsh"
+            },
+            "navigationLinks": [
+                {
+                    "title": "about",
+                    "linkTo": ""
+                },
+                {
+                    "title": "privacy policy",
+                    "linkTo": ""
+                },
+                {
+                    "title": "licensing",
+                    "linkTo": ""
+                },
+                {
+                    "title": "contact",
+                    "linkTo": ""
+                }
+            ]
+        },
+        "leftNavBar": {
+            "navLinks": [
+                {
+                    "title": "home",
+                    "icon": "solar:home-linear",
+                    "linkTo": "home"
+                },
+                {
+                    "title": "about me",
+                    "icon": "mdi:user-outline",
+                    "linkTo": "about-me"
+                },
+                {
+                    "title": "skills",
+                    "icon": "tabler:briefcase",
+                    "linkTo": "skills"
+                },
+                {
+                    "title": "projects",
+                    "icon": "charm:layout-stack-v",
+                    "linkTo": "projects"
+                },
+                {
+                    "title": "contact",
+                    "icon": "ph:phone-bold",
+                    "linkTo": "contact"
+                }
+            ]
+        }
+    },
+    "pages": {
+        "home": {
+            "sections": {
+                "hero": {},
+                "about": {
+                    "experience": {},
+                    "contact": {},
+                    "skills": {}
+                },
+                "projects": {}
+            }
+        }
+    },
+    "metadata": {
+        "logo": {
+            "logo": {
+                "image": "url",
+                "icon": "la:dragon"
+            },
+            "name": "harsh"
+        }
+    }
+}

@@ -28,7 +28,7 @@ function ProjectsCard({data}) {
 
 export default function Projects() {
     return (
-		<Section id="projects" section_title={<H_3 className={"md:text-left text-center px-4 xl:px-12"}>projects</H_3>} className={"p-4 xl:p-12"}>
+		<Section id="projects" section_title={<H_3 className={"text-accent md:text-left text-center px-4 xl:px-12"}>projects</H_3>} className={"p-4 xl:p-12"}>
 			<ul className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-4 `}>
                 {projectsData.map((projects,i)=>(
                     <li key={projects.title+i}>

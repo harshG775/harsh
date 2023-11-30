@@ -31,22 +31,20 @@
 @tailwind utilities;
 
 /* :root[data-theme="light"] {
-    --text:hsl(198, 95%, 8%);
-    --bg_1:hsl(0, 0%, 100%);
-    --bg_2:hsl(200, 100%, 97%);
-    --bg_3:hsl(216, 56%, 98%);
-    
-    --primary:hsl(201, 96%, 52%);
-    --secondary:hsl(228, 7%, 28%);
-    --accent:hsl(201, 95%, 75%);
+    --text: hsl(198, 95%, 8%);
+    --bg_1: hsl(0, 0%, 100%);
+    --bg_2: hsl(200, 100%, 97%);
+    --bg_3: hsl(216, 56%, 98%);
+    --primary: hsl(3, 75%, 78%);
+    --secondary: hsl(228, 7%, 28%);
+    --accent: hsl(3, 75%, 52%);
 }
 :root[data-theme="dark"] {
-    --text:hsl(0, 0%, 89%);
-    --bg_1:hsl(198, 0%, 8%);
-    --bg_2:hsl(213, 15%, 12%);
-    --bg_3:hsl(210, 2%, 16%) ;
-
-    --primary:hsl(181, 96%, 52%);
-    --secondary:hsl(228, 7%, 28%);
-    --accent:hsl(181, 95%, 75%);
+    --text: hsl(0, 0%, 89%);
+    --bg_1: hsl(198, 0%, 8%);
+    --bg_2: hsl(213, 15%, 12%);
+    --bg_3: hsl(210, 2%, 16%);
+    --primary: hsl(201, 96%, 52%);
+    --secondary: hsl(228, 7%, 28%);
+    --accent: hsl(201, 95%, 75%);
 } */

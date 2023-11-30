@@ -1,25 +1,27 @@
 import { Section } from "../../components/HTMLComponents/Section";
-import { H_3,H_4,H_5 } from "../../components/HTMLComponents/Headings";
+import { H_3,H_4,H_5,H_6 } from "../../components/HTMLComponents/Headings";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { aboutMeData } from "../../siteDB/SiteData";
 
-function AboutMe_section({heading_1,heading_2,description,projectsCompleted,ongoingProjects,}) {
+function AboutMe_section({main_heading,heading_2,description,projects_completed,ongoing_projects,}) {
 	return (
 		<div>
-			<H_3 className={"lg:mt-0"}>about me</H_3>
-			<div className="grid gap-0">
-				<H_5 className={"sm:mb-0"}>{heading_1}</H_5>
-				<H_3 className={" uppercase "}>{heading_2}</H_3>
-				<p className="text-text/70 font-normal text-lg mb-4 whitespace-pre-line">{description}</p>
-				<div className=" grid sm:grid-cols-2 gap-2">
-					<div className="grid grid-cols-2 sm:grid-cols-1">
-						<span className="text-xl">projects completed</span>
-						<span className=" text-4xl font-bold">{projectsCompleted}</span>
+			<H_4 className={"text-accent mt-8"}>about me</H_4>
+			<div className=" grid ">
+				<div>
+					<H_5 className={"sm:mt-0"}>{main_heading}</H_5>
+					<H_3 className={"sm:mt-0  uppercase "}>{heading_2}</H_3>
+				</div>
+				<p className="leading-8 max-w-[50ch] text-text/70 font-normal text-lg mb-4 whitespace-pre-line">{description}</p>
+				<div className=" grid md:grid-cols-2 gap-4 md:gap-8">
+					<div className=" outline-dashed outline-text/10 grid justify-center py-4 md:py-8 grid-cols-[1fr_3fr] gap-2">
+						<span className="grid place-content-center text-4xl font-bold">{projects_completed}</span>
+						<span className="text-xl">projects <br /> completed</span>
 					</div>
-					<div className="grid grid-cols-2 sm:grid-cols-1">
-						<span className="text-xl">ongoing project</span>
-						<span className=" text-4xl font-bold">{ongoingProjects}</span>
+					<div className=" outline-dashed outline-text/10 grid justify-center py-4 md:py-8 grid-cols-[1fr_3fr] gap-2">
+						<span className="grid place-content-center text-4xl font-bold">{ongoing_projects}</span>
+						<span className="text-xl">ongoing <br /> project</span>
 					</div>
 				</div>
 			</div>
@@ -29,15 +31,17 @@ function AboutMe_section({heading_1,heading_2,description,projectsCompleted,ongo
 
 function Experience({experiences}) {
 	return (
-		<div className="grid gap-4 ">
-			<H_4>EXPERIENCE</H_4>
-			{experiences.map((experience,i) =>(
-				<ul key={i} className="bg-bg_2/30 outline outline-2 outline-secondary/20  rounded-lg p-4 grid ">
-					<div>{experience.date}</div>
-					<div>{experience.jobRole}</div>
-					<div>{experience.jobDescription}</div>
-				</ul>
-			))}
+		<div>
+			<H_4 className="text-accent mt-8">EXPERIENCE</H_4>
+			<div className=" grid gap-4 ">
+				{experiences.map((experience,i) =>(
+					<ul key={i} className="p-4 sm:p-6 bg-bg_2/30 outline outline-2 outline-secondary/20  rounded-lg grid ">
+						<div>{experience.date}</div>
+						<H_6>{experience.jobRole}</H_6>
+						<div>{experience.jobDescription}</div>
+					</ul>
+				))}
+			</div>
 		</div>
 	);
 }
@@ -68,8 +72,8 @@ function Contacts({image,contacts}) {
 function Skills({programmingSKills}) {
 	return (
 		<div>
-			<H_4>skills</H_4>
-			<ul>
+			<H_4 className="text-accent mt-8">skills</H_4>
+			<ul className="">
 				{programmingSKills.map((skill,i) =>(
 					<li key={skill.skillName+i} className="grid grid-cols-1">
 						<div className="flex gap-3">

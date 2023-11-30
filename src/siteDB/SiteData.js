@@ -66,7 +66,7 @@ const footerData = {
           linkTo: "https://www.linkedin.com/in/harshg775",
           color: "hover:outline-blue-600 hover:text-blue-600",
         },
-      ],
+    ],
 	contact: {
 		email: "your.email@example.com",
 		phone: "+1 123-456-7890",
@@ -136,12 +136,11 @@ const projectsData = [
 ]
 const aboutMeData = {
     aboutMe: {
-        heading_1: "Hi, I'm H\u0061rsh!", // Unicode for 'a'
+        main_heading: "my name is Harsh",
         heading_2: "A Web Developer on a Mission",
-        description: `Passionate about transforming ideas into digital 
-experiences,I dive into the world of web development with enthusiasm. My journey is marked by a commitment to continuous learning and a knack for turning challenges into opportunities. With a focus on user-centric design and functionality, I bring creativity and precision to every project.`,
-        projectsCompleted: projectsData.length,
-        ongoingProjects: 5,
+        description: `Transforming ideas into digital experiences fuels my passion for web development. Committed to continuous learning, I embrace challenges as opportunities. My approach emphasizes user-centric design and functionality, infusing creativity and precision into every project.`,
+        projects_completed: projectsData.length,
+        ongoing_projects: 5,
     },
 	experiences: [
 		{
