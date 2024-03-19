@@ -5,8 +5,8 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 
 import userAuthRouter from "../routes/userAuth.router.js";
-import notesRouter from "../routes/notes.router.js";
-import verifyToken from "../middlewares/verifyAccessToken.js";
+import homePageRouter from "../routes/CMS/home.router.js";
+// import verifyToken from "../middlewares/verifyAccessToken.js";
 const app = express();
 
 // middlewares
@@ -16,10 +16,13 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 // custom middlewares
-app.use(verifyToken);
+// app.use(verifyToken);
 
-// routers
-app.use("/api/v1/users/auth", userAuthRouter);
-app.use("/api/v1/users/notes", notesRouter);
+/* routers */
+// auth
+app.use("/api/v1/auth", userAuthRouter);
+
+// cms
+app.use("/api/v1/cms/home", homePageRouter);
 
 export default app;
