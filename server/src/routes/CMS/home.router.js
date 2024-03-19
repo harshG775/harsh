@@ -2,6 +2,7 @@ import express from "express";
 import heroController from "../../../controllers/hero.controller.js";
 const router = express.Router();
 
+// Hero Section
 router.post("/hero", heroController.createHero);
 router.get("/hero", heroController.getHero);
 router.patch("/hero", heroController.updateHero);
