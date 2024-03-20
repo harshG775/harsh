@@ -1,6 +1,6 @@
 "use client";
 interface IconProps {
-    icon: any;
+    icon: string;
     color?: string;
     width?: string;
     height?: string;

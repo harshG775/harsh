@@ -1,4 +1,4 @@
-import { I } from "@/components/ui/iconify/I";
+import { I } from "@/components/ui/icons/iconify/I";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
