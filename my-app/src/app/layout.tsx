@@ -17,11 +17,19 @@ type Props = React.HtmlHTMLAttributes<HTMLHtmlElement>;
 export default function RootLayout({ children }: Props) {
     return (
         <html lang="en">
-            <body className={inter.className}>
-                <TopNavbar />
-                <SideNavbar />
-                <main className="w-full h-full">{children}</main>
-                <Footer />
+            <body className={`${inter.className}`}>
+                <TopNavbar  className=" z-40 bg-neutral-900 sticky top-0 xl:pl-64 transition-[padding] duration-200 "/>
+                <SideNavbar 
+                    className={` 
+                    z-50 fixed inset-y-0 left-0 w-64 bg-neutral-900 
+                    xl:translate-x-[0%] -translate-x-full transition-transform duration-200 
+                    `}
+                />
+                <main
+                    className="min-h-dvh z-0 xl:pl-64 transition-[padding] duration-200 bg-neutral-900 ">
+                    {children}
+                </main>
+                <Footer className=" z-40 bg-neutral-900 xl:pl-64 transition-[padding] duration-200"/>
             </body>
         </html>
     );
