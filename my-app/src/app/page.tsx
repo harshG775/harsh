@@ -1,38 +1,8 @@
-function HeroSection() {
-    return (
-        <header>
-            <h1>My App</h1>
-        </header>
-    );
-}
-function AboutSection() {
-    return (
-        <header>
-            <h1>AboutSection</h1>
-        </header>
-    );
-}
-function ProjectsSection() {
-    return (
-        <header>
-            <h1>ProjectsSection</h1>
-        </header>
-    );
-}
-function SkillsSection() {
-    return (
-        <header>
-            <h1>SkillsSection</h1>
-        </header>
-    );
-}
-function ContactSection() {
-    return (
-        <header>
-            <h1>ContactSection</h1>
-        </header>
-    );
-}
+import HeroSection from "@/components/pagesComponents/HeroSection";
+import AboutSection from "@/components/pagesComponents/AboutSection";
+import ProjectsSection from "@/components/pagesComponents/ProjectsSection";
+import SkillsSection from "@/components/pagesComponents/SkillsSection";
+import ContactSection from "@/components/pagesComponents/ContactSection";
 
 export default function Home() {
     return (
